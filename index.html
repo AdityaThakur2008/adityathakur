@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aditya Thakur | MERN Stack Developer</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      body {
+        font-family: "Inter", system-ui, sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#0b0f14] text-white">
+    <!-- ================= NAVBAR ================= -->
+    <nav
+      class="fixed top-0 w-full z-50 bg-[#0b0f14]/80 backdrop-blur border-b border-slate-800">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo / Name -->
+          <a href="#home" class="text-lg font-semibold text-white">
+            Aditya<span class="text-sky-400">.</span>
+          </a>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex items-center gap-8 text-slate-300">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </div>
+
+          <!-- Mobile Button -->
+          <button
+            id="menuBtn"
+            class="md:hidden text-slate-300 focus:outline-none">
+            ☰
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden bg-[#0b0f14] border-t border-slate-800">
+        <div class="px-6 py-4 flex flex-col gap-4 text-slate-300">
+          <a href="#about" class="mobile-link">About</a>
+          <a href="#skills" class="mobile-link">Skills</a>
+          <a href="#projects" class="mobile-link">Projects</a>
+          <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="min-h-screen flex items-center">
+      <div class="max-w-6xl mx-auto px-6 w-full">
+        <div class="max-w-3xl fade-up">
+          <p class="text-sm text-slate-400 mb-3">Hi, I’m</p>
+
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+            Aditya <span class="text-sky-400">Thakur</span>
+          </h1>
+
+          <h2 class="text-xl sm:text-2xl text-slate-300 mb-5">
+            MERN Stack Developer
+          </h2>
+
+          <p class="text-slate-400 max-w-xl mb-8">
+            I build scalable full-stack web applications using React, Node.js,
+            Express, and MongoDB.
+          </p>
+
+          <p class="font-mono text-sm text-slate-500 mb-10">
+            &lt; building real-world MERN applications /&gt;
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="#"
+              class="hover-lift px-6 py-3 bg-sky-500 text-black rounded-md font-medium hover:bg-sky-400 transition">
+              View Resume
+            </a>
+            <a
+              href="#"
+              class="hover-lift px-6 py-3 border border-slate-600 rounded-md text-slate-300 hover:border-sky-400 hover:text-white transition">
+              GitHub
+            </a>
+            <a
+              href="#"
+              class="hover-lift px-6 py-3 border border-slate-600 rounded-md text-slate-300 hover:border-sky-400 hover:text-white transition">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="py-20 border-t border-slate-800">
+      <div class="fade-up max-w-4xl mx-auto px-6">
+        <h3 class="text-2xl font-semibold mb-6 text-sky-400">About Me</h3>
+        <p class="text-slate-400 leading-relaxed">
+          I’m a B.Sc. Computer Science student and an aspiring MERN Stack
+          Developer. I enjoy building full-stack applications, solving
+          real-world problems, and learning how scalable systems work. Currently
+          seeking a software development internship.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="py-20 bg-[#0f172a]">
+      <div class="fade-up max-w-5xl mx-auto px-6">
+        <h3 class="text-2xl font-semibold mb-10 text-sky-400">Skills</h3>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+          <span class="skill">JavaScript</span>
+          <span class="skill">React</span>
+          <span class="skill">Next.js</span>
+          <span class="skill">Node.js</span>
+          <span class="skill">Express.js</span>
+          <span class="skill">MongoDB</span>
+          <span class="skill">JWT</span>
+          <span class="skill">REST APIs</span>
+          <span class="skill">Git & GitHub</span>
+          <span class="skill">HTML & CSS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="py-20 border-t border-slate-800">
+      <div class="fade-up max-w-6xl mx-auto px-6">
+        <h3 class="text-2xl font-semibold mb-10 text-sky-400">Projects</h3>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Project 1 -->
+          <div
+            class="hover-lift p-6 bg-[#0f172a] rounded-lg border border-slate-700">
+            <h4 class="text-xl font-semibold mb-3">
+              Skill Share – LinkedIn Clone
+            </h4>
+            <p class="text-slate-400 mb-4">
+              Full-stack social networking application with authentication,
+              posts, likes, comments, and connections.
+            </p>
+            <p class="text-sm text-slate-500 mb-5">
+              Tech: Next.js, React, Node.js, Express.js, MongoDB, JWT
+            </p>
+            <div class="flex gap-4">
+              <a href="#" class="text-sky-400 hover:underline">Live Demo</a>
+              <a href="#" class="text-sky-400 hover:underline">GitHub</a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="hover-lift p-6 bg-[#0f172a] rounded-lg border border-slate-700">
+            <h4 class="text-xl font-semibold mb-3">
+              Talk Sphere – Video Conferencing App
+            </h4>
+            <p class="text-slate-400 mb-4">
+              Real-time video conferencing app supporting P2P & group calls with
+              chat and screen sharing.
+            </p>
+            <p class="text-sm text-slate-500 mb-5">
+              Tech: React, Node.js, Express.js, WebRTC, Socket.IO, MongoDB
+            </p>
+            <div class="flex gap-4">
+              <a href="#" class="text-sky-400 hover:underline">Live Demo</a>
+              <a href="#" class="text-sky-400 hover:underline">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="py-20 bg-[#0f172a]">
+      <div class="fade-up max-w-4xl mx-auto px-6 text-center">
+        <h3 class="text-2xl font-semibold mb-6 text-sky-400">Contact</h3>
+        <p class="text-slate-400 mb-6">
+          I’m open to internship opportunities and collaborations.
+        </p>
+        <p class="text-slate-300">📧 adityathakur89362@gmail.com</p>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer
+      class="py-6 border-t border-slate-800 text-center text-slate-500 text-sm">
+      © 2026 Aditya Thakur · Built with ❤️ using Tailwind CSS
+    </footer>
+
+    <!-- Skill pill style -->
+    <style>
+      .skill {
+        padding: 0.75rem 1rem;
+        background: #0b0f14;
+        border: 1px solid #334155;
+        border-radius: 0.5rem;
+        text-align: center;
+        color: #cbd5f5;
+      }
+
+      .fade-up {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.8s ease-out;
+      }
+      .fade-up.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Hover lift */
+      .hover-lift {
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+      .hover-lift:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 40px rgba(56, 189, 248, 0.15);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .nav-link {
+        position: relative;
+        transition: color 0.3s ease;
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 0;
+        height: 2px;
+        background: #38bdf8;
+        transition: width 0.3s ease;
+      }
+
+      .nav-link:hover {
+        color: white;
+      }
+
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      .mobile-link:hover {
+        color: white;
+      }
+    </style>
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            }
+          });
+        },
+        { threshold: 0.15 },
+      );
+
+      document.querySelectorAll(".fade-up").forEach((el) => {
+        observer.observe(el);
+      });
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
