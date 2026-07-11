@@ -4,9 +4,8 @@
 
 @custom-variant dark (&:is(.dark *));
 
-
 @theme inline {
-  --color-brand: #4F46E5;
+  --color-brand: #4f46e5;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
@@ -128,6 +127,6 @@
   }
   html {
     @apply font-sans;
-      scroll-behavior: smooth;
+    scroll-behavior: smooth;
   }
 }

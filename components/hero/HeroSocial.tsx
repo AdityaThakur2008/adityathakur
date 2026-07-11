@@ -1,23 +1,13 @@
 "use client";
 import React, { useState } from "react";
 import { Mail, Check } from "lucide-react";
-import { FaGithub } from "react-icons/fa6";
-import { FaLinkedinIn } from "react-icons/fa";
+import {socials} from "@/data/socials"
 
 export default function HeroSocial() {
   const [copied, setCopied] = useState(false);
   const emailAddress = "adityathakur89362@gmail.com";
 
-  const socials = [
-    {
-      icon: <FaGithub className="w-5 h-5" />,
-      href: "https://www.github.com/adityathakur2008",
-    },
-    {
-      icon: <FaLinkedinIn className="w-5 h-5" />,
-      href: "https://www.linkedin.com/in/aditya-thakur08/",
-    },
-  ];
+ 
   const handleEmailClick = (e: React.MouseEvent) => {
     e.preventDefault();
 
@@ -33,16 +23,21 @@ export default function HeroSocial() {
 
   return (
     <div className="flex items-center space-x-3 pt-4">
-      {socials.map((social, index) => (
-        <a
-          key={index}
-          href={social.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-3 bg-slate-50 hover:bg-slate-100 border border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-slate-800 rounded-xl text-slate-600 dark:text-slate-400 transition-colors shadow-sm">
-          {social.icon}
-        </a>
-      ))}
+      {socials.map((social, index) => {
+  const Icon = social.icon;
+
+  return (
+    <a
+      key={index}
+      href={social.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="p-3 bg-slate-50 hover:bg-slate-100 border border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-slate-800 rounded-xl text-slate-600 dark:text-slate-400 transition-colors shadow-sm"
+    >
+      <Icon className="h-5 w-5" />
+    </a>
+  );
+})}
 
       <button
         onClick={handleEmailClick}
