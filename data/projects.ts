@@ -1,298 +1,93 @@
-import type { ComponentType, SVGProps } from "react";
-
-export interface Tech {
-  name: string;
-  color: string;
-  icon?: ComponentType<SVGProps<SVGSVGElement>>;
-}
-
-export interface ProjectImage {
-  desktop: string;
-  mobile: string;
-}
-
-export interface Project {
-  id: number;
-
-  slug: string;
-
-  featured: boolean;
-
-  title: string;
-  tagline: string;
-
-  shortDescription: string;
-  description: string;
-
-  image: ProjectImage;
-
-  category: string[];
-
-  tags: string[];
-
-  tech: Tech[];
-
-  features: string[];
-
-  github: string;
-  live: string;
-
-  status: "Completed" | "In Progress";
-
-  type: "Personal" | "Client";
-
-  difficulty: "Beginner" | "Intermediate" | "Advanced";
-
-  duration: string;
-
-  team: string;
-
-  year: string;
-}
-
-export const projectCategories = [
-  "All",
-  "Full Stack",
-  "Frontend",
-  "Backend",
-  "AI",
-  "API",
-] as const;
-
-export const projects: Project[] = [
-  {
-    id: 1,
-
-    slug: "smartspend-ai",
-
-    featured: true,
-
-    title: "SmartSpend.ai",
-
-    tagline: "AI Powered Expense Tracker",
-
-    shortDescription:
-      "Manage your finances with AI-powered insights and analytics.",
-
-    description:
-      "A modern AI-powered expense tracker that helps users manage income and expenses using intelligent insights, analytics dashboards and monthly reports.",
-
-    image: {
-      desktop: "/images/project-desktop.png",
-      mobile: "/images/project-mobile.png",
-    },
-
-    category: ["Full Stack", "AI"],
-
-    tags: ["Finance", "Dashboard", "Analytics", "Authentication"],
-
-    tech: [
-      { name: "Next.js", color: "bg-black text-white" },
-      { name: "React", color: "bg-cyan-100 text-cyan-700" },
-      { name: "TypeScript", color: "bg-blue-100 text-blue-700" },
-      { name: "Node.js", color: "bg-green-100 text-green-700" },
-      { name: "Express", color: "bg-slate-100 text-slate-700" },
-      { name: "Prisma", color: "bg-indigo-100 text-indigo-700" },
-      { name: "PostgreSQL", color: "bg-sky-100 text-sky-700" },
-      { name: "Docker", color: "bg-blue-100 text-blue-700" },
-      { name: "Gemini API", color: "bg-violet-100 text-violet-700" },
-      { name: "Tailwind", color: "bg-cyan-100 text-cyan-700" },
-    ],
-
-    features: [
-      "AI Insights",
-      "Expense Analytics",
-      "Monthly Reports",
-      "Authentication",
-      "Interactive Dashboard",
-      "Responsive UI",
-    ],
-
-    github: "#",
-
-    live: "#",
-
-    status: "In Progress",
-
-    type: "Personal",
-
-    difficulty: "Advanced",
-
-    duration: "2 Months",
-
-    team: "Solo",
-
-    year: "2026",
-  },
-
-  {
-    id: 2,
-
-    slug: "talksphere",
-
-    featured: false,
-
-    title: "TalkSphere",
-
-    tagline: "Video Conferencing Platform",
-
-    shortDescription: "Real-time meetings powered by WebRTC and Socket.io.",
-
-    description:
-      "A video conferencing platform supporting video meetings, screen sharing and real-time messaging.",
-
-    image: {
-      desktop: "/images/project-desktop.png",
-      mobile: "/images/project-mobile.png",
-    },
-
-    category: ["Full Stack"],
-
-    tags: ["WebRTC", "Socket.io", "Video Calling"],
-
-    tech: [
-      { name: "React", color: "bg-cyan-100 text-cyan-700" },
-      { name: "Node.js", color: "bg-green-100 text-green-700" },
-      { name: "Express", color: "bg-slate-100 text-slate-700" },
-      { name: "MongoDB", color: "bg-green-100 text-green-700" },
-      { name: "Socket.io", color: "bg-gray-100 text-gray-700" },
-      { name: "WebRTC", color: "bg-orange-100 text-orange-700" },
-    ],
-
-    features: [
-      "Video Calling",
-      "Meeting Rooms",
-      "Chat",
-      "Authentication",
-      "Screen Sharing",
-    ],
-
-    github: "#",
-
-    live: "#",
-
-    status: "Completed",
-
-    type: "Personal",
-
-    difficulty: "Advanced",
-
-    duration: "1 Month",
-
-    team: "Solo",
-
-    year: "2026",
-  },
-
-  {
-    id: 3,
-
-    slug: "linkedin-clone",
-
-    featured: false,
-
-    title: "LinkedIn Clone",
-
-    tagline: "Professional Networking Platform",
-
-    shortDescription: "A social networking platform inspired by LinkedIn.",
-
-    description:
-      "Users can create profiles, upload posts, connect with others, like, comment and manage professional profiles.",
-
-    image: {
-      desktop: "/images/project-desktop.png",
-      mobile: "/images/project-mobile.png",
-    },
-
-    category: ["Full Stack"],
-
-    tags: ["Social Media", "Cloudinary", "Authentication"],
-
-    tech: [
-      { name: "React", color: "bg-cyan-100 text-cyan-700" },
-      { name: "Node.js", color: "bg-green-100 text-green-700" },
-      { name: "Express", color: "bg-slate-100 text-slate-700" },
-      { name: "MongoDB", color: "bg-green-100 text-green-700" },
-      { name: "JWT", color: "bg-pink-100 text-pink-700" },
-      { name: "Cloudinary", color: "bg-blue-100 text-blue-700" },
-    ],
-
-    features: ["Authentication", "Posts", "Comments", "Likes", "Media Upload"],
-
-    github: "#",
-
-    live: "#",
-
-    status: "Completed",
-
-    type: "Personal",
-
-    difficulty: "Intermediate",
-
-    duration: "3 Weeks",
-
-    team: "Solo",
-
-    year: "2026",
-  },
-
+import { Box, Star, Rocket, Users, Globe, Smartphone, Lock, Video, Bed } from "lucide-react";
+import { SiNextdotjs, SiTypescript, SiPrisma, SiPostgresql, SiTailwindcss, SiMongodb, SiNodedotjs, SiExpress } from "react-icons/si";
+
+export const projectsHeader = {
+  badge: "MY PROJECTS",
+  heading: "Projects that",
+  highlight: "solve",
+  highlight2: "problems.",
+  description: "Here are some of the projects I've built that demonstrate my skills and passion for creating impactful solutions.",
+};
+
+export const projectStats = [
+  { id: 1, icon: Box, value: "20+", label: "Projects Built" },
+  { id: 2, icon: Star, value: "10+", label: "Full Stack Apps" },
+  { id: 3, icon: Rocket, value: "5+", label: "In Production" },
+  { id: 4, icon: Users, value: "1K+", label: "Happy Users" },
+];
+
+export const projectCategories = ["All", "Web Apps", "AI / ML", "Full Stack", "Tools", "Others"];
+
+export const featuredProject = {
+  title: "SmartSpend.ai",
+  description: "AI-powered expense tracker that analyzes spending patterns and provides smart insights to help users save more.",
+  image: "/images/smartspend-mockup.png", // Aap apni image yahan link kar sakte hain
+  tags: [
+    { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
+    { name: "TypeScript", icon: SiTypescript, color: "text-blue-500" },
+    { name: "Prisma", icon: SiPrisma, color: "text-white" },
+    { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-400" },
+    { name: "Gemini AI", icon: Star, color: "text-green-400" },
+  ],
+  links: { view : null , github: "https://github.com/AdityaThakur2008/smartSpend" }
+};
+
+export const smallProjects = [
   {
     id: 4,
-
-    slug: "expense-tracker-api",
-
-    featured: false,
-
-    title: "Expense Tracker API",
-
-    tagline: "REST API Backend",
-
-    shortDescription: "Secure backend API built with Express and Prisma.",
-
-    description:
-      "RESTful backend with JWT authentication, validation, PostgreSQL and clean architecture.",
-
-    image: {
-      desktop: "/images/project-desktop.png",
-      mobile: "/images/project-mobile.png",
-    },
-
-    category: ["Backend", "API"],
-
-    tags: ["REST API", "JWT", "Prisma"],
-
-    tech: [
-      { name: "Node.js", color: "bg-green-100 text-green-700" },
-      { name: "Express", color: "bg-slate-100 text-slate-700" },
-      { name: "Prisma", color: "bg-indigo-100 text-indigo-700" },
-      { name: "PostgreSQL", color: "bg-sky-100 text-sky-700" },
-      { name: "JWT", color: "bg-pink-100 text-pink-700" },
-      { name: "Zod", color: "bg-violet-100 text-violet-700" },
+    title: "SkillShare",
+    description: "A LinkedIn clone platform to connect, share and grow together.",
+    logoIcon: "S",
+    logoBg: "bg-primary",
+    categories: ["Web Apps", "Full Stack"],
+    tags: [
+      { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
+      { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-sky-400" },
+      { name: "MongoDB", icon: SiMongodb, color: "text-green-500" },
+       { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
     ],
-
-    features: [
-      "CRUD API",
-      "Authentication",
-      "Validation",
-      "Error Handling",
-      "PostgreSQL",
-    ],
-
-    github: "#",
-
-    live: "#",
-
-    status: "Completed",
-
-    type: "Personal",
-
-    difficulty: "Intermediate",
-
-    duration: "2 Weeks",
-
-    team: "Solo",
-
-    year: "2026",
+    links: { demo: " https://skill-share-linked-in-clone-full-st.vercel.app/", github: " https://github.com/AdityaThakur2008/Skill_share_linkedIn_clone_FULL_STACK_PROJECT" }
   },
+  {
+    id: 3,
+    title: "Talk Sphere",
+    description: "Real-time video conferencing platform with secure calls and chat.",
+    logoIcon: Video,
+    logoBg: "bg-blue-500",
+    categories: ["Web Apps", "Full Stack", "Tools"],
+    tags: [
+      { name: "WebRTC", icon: Globe, color: "text-red-400" },
+      { name: "Socket.io", icon: Globe, color: "text-white" },
+      { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
+    ],
+    links: { demo: "https://talk-sphere-p8s5.onrender.com", github: "https://github.com/AdityaThakur2008/Talk-Sphere-Conferencing-App" }
+  },
+  {
+    id: 2,
+    title: "AI Sustainable Commerce",
+    description: "AI-based product categorization and proposal generation for e-commerce.",
+    logoIcon: Lock,
+    logoBg: "bg-green-500",
+    categories: ["AI / ML", "Full Stack"],
+    tags: [
+      { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
+      { name: "Gemini API", icon: Star, color: "text-blue-400" },
+      { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-500" },
+    ],
+    links: { github: "https://github.com/AdityaThakur2008/ai-sustainable-commerce" }
+  },
+  {
+    id: 1,
+    title: "WanderLust",
+    description: "Airbnb clone with listing, booking and reviews.",
+    logoIcon: Bed,
+    logoBg: "bg-orange-500",
+    categories: ["Web Apps", "Full Stack"],
+    tags: [
+      { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
+      { name: "Express.js", icon: SiExpress, color: "text-white" },
+      { name: "MongoDB", icon: SiMongodb, color: "text-green-500" },
+    ],
+    links: { demo: "https://wonderlust-h12v.onrender.com/listings", github: "https://github.com/AdityaThakur2008/first_fullstack_project" }
+  }
 ];

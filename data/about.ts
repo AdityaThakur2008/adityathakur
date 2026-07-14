@@ -1,128 +1,75 @@
 import {
-  Calendar,
-  GraduationCap,
-  Mail,
-  MapPin,
-  Globe,
-  Brain,
-  HelpCircle,
-  Code,
-  Layers,
   Code2,
-  Terminal,
-  Cpu,
-  Heart,
-  Target,
   Lightbulb,
-  BookOpen,
+  UserCircle,
+  Calendar,
+  MapPin,
+  GraduationCap,
+  Terminal,
+  FolderDot,
+  
 } from "lucide-react";
-import { FaGithub } from "react-icons/fa6";
+import {
+  SiNextdotjs,
+  SiReact,
+  SiTypescript,
+  SiNodedotjs,
+  SiJavascript,
+  SiTailwindcss,
+  SiPostgresql,
+  SiPrisma,
+  SiDocker,
+} from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
 
-export const personalInfo = [
-  {
-    icon: Calendar,
-    title: "Born",
-    value: "26 January 2008",
-  },
-  {
-    icon: MapPin,
-    title: "Location",
-    value: "Harda, Madhya Pradesh",
-  },
-  {
-    icon: GraduationCap,
-    title: "Education",
-    value: "B.Sc. Computer Science (2024–present)",
-    subtitle: "Barkatullah University, Bhopal",
-  },
-  {
-    icon: Mail,
-    title: "Email",
-    value: "adityathakur89362@gmail.com",
-    href: "mailto:adityathakur89362@gmail.com",
-  },
-];
+export const aboutContent = {
+  heading: "Get to know",
+  highlight: "me better",
+  description1:
+    "I'm Aditya Thakur, a passionate Full Stack Developer who loves building scalable web applications and AI-powered solutions that solve real-world problems.",
+  description2:
+    "I enjoy turning ideas into meaningful products through clean code, modern technologies, and great user experiences.",
+};
 
-export const traits = [
+export const features = [
   {
-    icon: Heart,
-    title: "Full Stack Development",
-    desc: "Building modern web applications with React, Next.js and Node.js.",
+    id: 1,
+    icon: Code2,
+    title: "Clean Code",
+    description: "I write maintainable, scalable and efficient code following best practices.",
   },
   {
-    icon: Target,
-    title: "AI Development",
-    desc: "Creating AI-powered applications using LLM APIs and automation.",
-  },
-  {
+    id: 2,
     icon: Lightbulb,
-    title: "Problem Solving",
-    desc: "Turning real-world ideas into practical software solutions.",
+    title: "Problem Solver",
+    description: "I love solving complex problems and building solutions that create real impact.",
   },
   {
-    icon: BookOpen,
-    title: "Continuous Learning",
-    desc: "Always exploring new technologies and improving every day.",
+    id: 3,
+    icon: UserCircle,
+    title: "Always Learning",
+    description: "I'm constantly exploring new technologies and improving my craft everyday.",
   },
 ];
 
 export const quickFacts = [
-  {
-    icon: Code2,
-    color: "text-blue-600",
-    value: "10+",
-    label: "Projects Completed",
-  },
-  {
-    icon: Terminal,
-    color: "text-emerald-600",
-    value: "20K+",
-    label: "Lines of Code",
-  },
-  {
-    icon: Calendar,
-    color: "text-amber-600",
-    value: "1+",
-    label: "Years of Coding",
-  },
-  {
-    icon: FaGithub,
-    color: "text-indigo-600",
-    value: "200+",
-    label: "GitHub Commits",
-  },
-  {
-    icon: Cpu,
-    color: "text-rose-600",
-    value: "5+",
-    label: "Technologies",
-  },
+  { id: 1, icon: Calendar, value: "18", label: "Years Old" },
+  { id: 2, icon: MapPin, value: "Harda, MP", label: "Location" },
+  { id: 3, icon: GraduationCap, value: "B.Sc. CS", label: "2024 - 2027" },
+  { id: 4, icon: Terminal, value: "1+", label: "Years of Coding" },
+  { id: 5, icon: FolderDot, value: "10+", label: "Projects Completed" },
+  { id: 6, icon: FaGithub, value: "100+", label: "GitHub Commits" },
 ];
 
-export const interests = [
-  {
-    icon: Globe,
-    color: "text-blue-500",
-    label: "Web Development",
-  },
-  {
-    icon: Brain,
-    color: "text-indigo-500",
-    label: "AI / Machine Learning",
-  },
-  {
-    icon: HelpCircle,
-    color: "text-purple-500",
-    label: "Problem Solving",
-  },
-  {
-    icon: Code,
-    color: "text-sky-500",
-    label: "Open Source",
-  },
-  {
-    icon: Layers,
-    color: "text-blue-400",
-    label: "UI/UX Design",
-  },
+export const techStack = [
+  { id: 1, name: "Next.js", icon: SiNextdotjs },
+  { id: 2, name: "React", icon: SiReact },
+  { id: 3, name: "TypeScript", icon: SiTypescript },
+  { id: 4, name: "Node.js", icon: SiNodedotjs },
+  { id: 5, name: "JavaScript", icon: SiJavascript },
+  { id: 6, name: "Tailwind CSS", icon: SiTailwindcss },
+  { id: 7, name: "PostgreSQL", icon: SiPostgresql },
+  { id: 8, name: "Prisma", icon: SiPrisma },
+  { id: 9, name: "Git & GitHub", icon: FaGithub },
+  { id: 10, name: "Docker", icon: SiDocker },
 ];
