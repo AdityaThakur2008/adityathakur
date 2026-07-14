@@ -52,7 +52,7 @@ export default function HeroContent() {
               behavior: "smooth",
             })
           }
-          className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3.5 rounded-full text-sm font-medium transition-all shadow-[0_0_20px_rgba(124,108,251,0.4)] flex items-center gap-2">
+          className="bg-primary hover:bg-primary/90 text-white px-6 py-3.5 rounded-full text-sm font-medium transition-all shadow-[0_0_20px_rgba(124,108,251,0.4)] flex items-center gap-2">
           View My Work <ArrowRight size={18} />
         </button>
         <button
