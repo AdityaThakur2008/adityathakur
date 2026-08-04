@@ -111,7 +111,7 @@ export default function Projects() {
             </div>
             <div>
               <h3 className="text-lg md:text-xl font-bold text-foreground mb-1">Have an idea in mind?</h3>
-              <p className="text-sm text-muted-foreground">I'm always open to discussing new projects and creative ideas.</p>
+              <p className="text-sm text-muted-foreground">I&apos;m always open to discussing new projects and creative ideas.</p>
             </div>
           </div>
           
@@ -120,7 +120,7 @@ export default function Projects() {
               behavior: "smooth",
             })
           }className="w-full md:w-auto flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3.5 rounded-xl text-sm font-medium transition-all shadow-[0_0_15px_rgba(124,108,251,0.2)]">
-            Let's Build Together <ArrowUpRight size={18} />
+            Let&apos;s Build Together <ArrowUpRight size={18} />
           </button>
         </motion.div>
 

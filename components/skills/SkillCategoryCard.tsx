@@ -1,16 +1,17 @@
 "use client";
 
+import type { ComponentType } from "react";
 import { motion } from "framer-motion";
 
 interface SkillItem {
   name: string;
-  icon: any;
+  icon: ComponentType<{ size?: number; className?: string }>;
   color: string;
 }
 
 interface SkillCategoryCardProps {
   title: string;
-  icon: any;
+  icon: ComponentType<{ size?: number; className?: string }>;
   skills: SkillItem[];
   index: number;
 }

@@ -1,5 +1,5 @@
 import { Mail,  Code2, Layers, Rocket, Star } from "lucide-react";
-import {FaGithub, FaLinkedin, FaTwitter} from "react-icons/fa";
+import {FaGithub, FaLinkedin} from "react-icons/fa";
 
 export const heroData = {
   badge: "Available for opportunities",

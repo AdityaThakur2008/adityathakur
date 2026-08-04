@@ -9,11 +9,10 @@ export default function HeroContent() {
   const [copied, setCopied] = useState(false);
 
   const handleEmailClick = (e: React.MouseEvent, url: string) => {
-   
     const email = url.replace("mailto:", "");
 
     navigator.clipboard.writeText(email);
-    
+
     setCopied(true);
 
     setTimeout(() => setCopied(false), 2000);
@@ -23,7 +22,7 @@ export default function HeroContent() {
     <motion.div
       initial={{ opacity: 0, x: -40 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.7 }}
+      transition={{ duration: 0.3 }}
       className="flex flex-col items-start gap-6">
       <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-border bg-card/50 backdrop-blur-sm text-xs font-medium text-muted-foreground">
         <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
@@ -70,7 +69,6 @@ export default function HeroContent() {
         {socialLinks.map((link) => {
           const isEmail = link.name === "mail";
 
-          
           const Icon = isEmail && copied ? Check : link.icon;
 
           return (
@@ -81,7 +79,6 @@ export default function HeroContent() {
               rel={isEmail ? "" : "noopener noreferrer"}
               onClick={(e) => {
                 if (isEmail) {
-                
                   handleEmailClick(e, link.url);
                 }
               }}

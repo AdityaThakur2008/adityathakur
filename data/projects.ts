@@ -1,12 +1,31 @@
-import { Box, Star, Rocket, Users, Globe, Smartphone, Lock, Video, Bed } from "lucide-react";
-import { SiNextdotjs, SiTypescript, SiPrisma, SiPostgresql, SiTailwindcss, SiMongodb, SiNodedotjs, SiExpress } from "react-icons/si";
+import {
+  Box,
+  Star,
+  Rocket,
+  Users,
+  Globe,
+  Lock,
+  Video,
+  Bed,
+} from "lucide-react";
+import {
+  SiNextdotjs,
+  SiTypescript,
+  SiPrisma,
+  SiPostgresql,
+  SiTailwindcss,
+  SiMongodb,
+  SiNodedotjs,
+  SiExpress,
+} from "react-icons/si";
 
 export const projectsHeader = {
   badge: "MY PROJECTS",
   heading: "Projects that",
   highlight: "solve",
   highlight2: "problems.",
-  description: "Here are some of the projects I've built that demonstrate my skills and passion for creating impactful solutions.",
+  description:
+    "Here are some of the projects I've built that demonstrate my skills and passion for creating impactful solutions.",
 };
 
 export const projectStats = [
@@ -16,11 +35,19 @@ export const projectStats = [
   { id: 4, icon: Users, value: "1K+", label: "Happy Users" },
 ];
 
-export const projectCategories = ["All", "Web Apps", "AI / ML", "Full Stack", "Tools", "Others"];
+export const projectCategories = [
+  "All",
+  "Web Apps",
+  "AI / ML",
+  "Full Stack",
+  "Tools",
+  "Others",
+];
 
 export const featuredProject = {
   title: "SmartSpend.ai",
-  description: "AI-powered expense tracker that analyzes spending patterns and provides smart insights to help users save more.",
+  description:
+    "AI-powered expense tracker that analyzes spending patterns and provides smart insights to help users save more.",
   image: "/images/smartspend-mockup.png", // Aap apni image yahan link kar sakte hain
   tags: [
     { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
@@ -29,14 +56,18 @@ export const featuredProject = {
     { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-400" },
     { name: "Gemini AI", icon: Star, color: "text-green-400" },
   ],
-  links: { view : null , github: "https://github.com/AdityaThakur2008/smartSpend" }
+  links: {
+    view: "https://smart-spend-zeta.vercel.app",
+    github: "https://github.com/AdityaThakur2008/smartSpend",
+  },
 };
 
 export const smallProjects = [
   {
     id: 4,
     title: "SkillShare",
-    description: "A LinkedIn clone platform to connect, share and grow together.",
+    description:
+      "A LinkedIn clone platform to connect, share and grow together.",
     logoIcon: "S",
     logoBg: "bg-primary",
     categories: ["Web Apps", "Full Stack"],
@@ -44,14 +75,19 @@ export const smallProjects = [
       { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
       { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-sky-400" },
       { name: "MongoDB", icon: SiMongodb, color: "text-green-500" },
-       { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
+      { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
     ],
-    links: { demo: " https://skill-share-linked-in-clone-full-st.vercel.app/", github: " https://github.com/AdityaThakur2008/Skill_share_linkedIn_clone_FULL_STACK_PROJECT" }
+    links: {
+      demo: " https://skill-share-linked-in-clone-full-st.vercel.app/",
+      github:
+        " https://github.com/AdityaThakur2008/Skill_share_linkedIn_clone_FULL_STACK_PROJECT",
+    },
   },
   {
     id: 3,
     title: "Talk Sphere",
-    description: "Real-time video conferencing platform with secure calls and chat.",
+    description:
+      "Real-time video conferencing platform with secure calls and chat.",
     logoIcon: Video,
     logoBg: "bg-blue-500",
     categories: ["Web Apps", "Full Stack", "Tools"],
@@ -60,12 +96,17 @@ export const smallProjects = [
       { name: "Socket.io", icon: Globe, color: "text-white" },
       { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
     ],
-    links: { demo: "https://talk-sphere-p8s5.onrender.com", github: "https://github.com/AdityaThakur2008/Talk-Sphere-Conferencing-App" }
+    links: {
+      demo: "https://talk-sphere-p8s5.onrender.com",
+      github:
+        "https://github.com/AdityaThakur2008/Talk-Sphere-Conferencing-App",
+    },
   },
   {
     id: 2,
     title: "AI Sustainable Commerce",
-    description: "AI-based product categorization and proposal generation for e-commerce.",
+    description:
+      "AI-based product categorization and proposal generation for e-commerce.",
     logoIcon: Lock,
     logoBg: "bg-green-500",
     categories: ["AI / ML", "Full Stack"],
@@ -74,7 +115,9 @@ export const smallProjects = [
       { name: "Gemini API", icon: Star, color: "text-blue-400" },
       { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-500" },
     ],
-    links: { github: "https://github.com/AdityaThakur2008/ai-sustainable-commerce" }
+    links: {
+      github: "https://github.com/AdityaThakur2008/ai-sustainable-commerce",
+    },
   },
   {
     id: 1,
@@ -88,6 +131,9 @@ export const smallProjects = [
       { name: "Express.js", icon: SiExpress, color: "text-white" },
       { name: "MongoDB", icon: SiMongodb, color: "text-green-500" },
     ],
-    links: { demo: "https://wonderlust-h12v.onrender.com/listings", github: "https://github.com/AdityaThakur2008/first_fullstack_project" }
-  }
+    links: {
+      demo: "https://wonderlust-h12v.onrender.com/listings",
+      github: "https://github.com/AdityaThakur2008/first_fullstack_project",
+    },
+  },
 ];

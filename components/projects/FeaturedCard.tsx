@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { ArrowUpRight, Star } from "lucide-react";
 import {FaGithub} from "react-icons/fa";
 import { featuredProject } from "@/data/projects";
@@ -15,7 +16,7 @@ export default function FeaturedCard() {
         
      
         <div className="w-[110%] h-[110%] rounded-xl bg-secondary/20 border border-border/30 rotate-2 translate-y-4 shadow-2xl flex items-center justify-center text-muted-foreground/50 text-sm">
-          <img src={featuredProject.image} alt={featuredProject.title} className="w-full h-full object-cover rounded-xl" />
+          <Image src={featuredProject.image} alt={featuredProject.title} width={800} height={600} className="w-full h-full object-cover rounded-xl" />
         </div>
       </div>
 

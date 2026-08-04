@@ -30,10 +30,8 @@ import {
   SiJavascript,
   SiCplusplus,
   SiPython,
-  SiFigma,
   SiGit,
   SiEslint,
-  SiPrettier,
   SiJsonwebtokens,
   SiCloudinary
 } from "react-icons/si";
