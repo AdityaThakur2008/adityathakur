@@ -33,7 +33,7 @@ export default function ProjectsHeader() {
       >
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150px] h-[150px] bg-primary/20 blur-[60px] rounded-full pointer-events-none" />
         
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-10 relative z-10 divide-x divide-border/0 sm:divide-border/50">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-10 relative z-10 divide-x divide-border/0 sm:divide-border/50">
           {projectStats.map((stat, index) => {
             const Icon = stat.icon;
             return (

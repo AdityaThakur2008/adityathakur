@@ -32,7 +32,6 @@ export const projectStats = [
   { id: 1, icon: Box, value: "20+", label: "Projects Built" },
   { id: 2, icon: Star, value: "10+", label: "Full Stack Apps" },
   { id: 3, icon: Rocket, value: "5+", label: "In Production" },
-  { id: 4, icon: Users, value: "1K+", label: "Happy Users" },
 ];
 
 export const projectCategories = [
@@ -45,10 +44,10 @@ export const projectCategories = [
 ];
 
 export const featuredProject = {
-  title: "SmartSpend.ai",
+  title: "SmartSpend",
   description:
     "AI-powered expense tracker that analyzes spending patterns and provides smart insights to help users save more.",
-  image: "/images/smartspend-mockup.png", // Aap apni image yahan link kar sakte hain
+  image: "/images/smartspend-mockup.png", 
   tags: [
     { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
     { name: "TypeScript", icon: SiTypescript, color: "text-blue-500" },

@@ -58,7 +58,7 @@ export const quickFacts = [
   { id: 3, icon: GraduationCap, value: "B.Sc. CS", label: "2024 - 2027" },
   { id: 4, icon: Terminal, value: "1+", label: "Years of Coding" },
   { id: 5, icon: FolderDot, value: "10+", label: "Projects Completed" },
-  { id: 6, icon: FaGithub, value: "100+", label: "GitHub Commits" },
+  { id: 6, icon: FaGithub, value: "50+", label: "GitHub Commits" },
 ];
 
 export const techStack = [
